@@ -1,0 +1,13 @@
+name: sinBank
+version: '1.0.0'
+main: org.sinBank.SinBank
+api-version: '1.21'
+commands:
+  bank:
+    permission-message: "You not have permission for use command."
+    permission: sinBank.bank
+    usage: /<command>
+    description: "Open command gui menu"
+    aliases:
+      - b
+      - sb

@@ -1,0 +1,85 @@
+####################################################################################
+##                                                                                ##
+##    ███████ ██ ███   ██ ███████  █████  ███    ███ ██    ██ ████████ ██   ██    ##
+##    ██      ██ ████  ██ ██      ██   ██ ████  ████ ██    ██    ██    ██   ██    ##
+##    ███████ ██ ██ ██ ██ ███████ ███████ ██ ████ ██ ██    ██    ██    ███████    ##
+##         ██ ██ ██  ████      ██ ██   ██ ██  ██  ██ ██    ██    ██    ██   ██    ##
+##    ███████ ██ ██   ███ ███████ ██   ██ ██      ██ ████████    ██    ██   ██    ##
+##                                                                                ##
+####################################################################################
+
+
+version: 1.0.0
+
+loan-list:
+  1000:
+    amount: 1000
+    interest_rate: 0.04
+    repayment_days: 3
+    penalty_rate: 0.10
+    min_income_per_day: 500
+    min_account_age: 3
+
+  5000:
+    amount: 5000
+    interest_rate: 0.04
+    repayment_days: 5
+    penalty_rate: 0.14
+    min_income_per_day: 700
+    min_account_age: 5
+
+  10000:
+    amount: 10000
+    interest_rate: 0.04
+    repayment_days: 7
+    penalty_rate: 0.17
+    min_income_per_day: 1500
+    min_account_age: 10
+
+  50000:
+    amount: 50000
+    interest_rate: 0.04
+    repayment_days: 10
+    penalty_rate: 0.20
+    min_income_per_day: 5000
+    min_account_age: 20
+
+
+loan-gui:
+  - item:
+      slot: 10
+      loanId: "1000"
+      item_type: "COAL"
+      item_model: 0
+  - item:
+      slot: 12
+      loanId: "5000"
+      item_type: "IRON_INGOT"
+      item_model: 0
+  - item:
+      slot: 14
+      loanId: "10000"
+      item_type: "GOLD_INGOT"
+      item_model: 0
+  - item:
+      slot: 16
+      loanId: "50000"
+      item_type: "DIAMOND"
+      item_model: 0
+  - item:
+      slot: 40
+      item_type: "OAK_SIGN"
+      item_model: 0
+      system: true
+      item_name : "พิมพ์จำนวนเงินที่ต้องการกู้"
+
+loan-confirm-gui:
+  - item:
+      slot: 13
+      action_type: "show_lone_select"
+  - item:
+      slot: 30
+      action_type: "cancel"
+  - item:
+      slot: 32
+      action_type: "confirm"

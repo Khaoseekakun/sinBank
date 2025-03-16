@@ -1,0 +1,27 @@
+no-permission: "คุณไม่มีสิทธิ์ในการใช้งานคำสั่งนี้"
+
+loan_status:
+  accept: "สามารถกู้ได้"
+  deny: "ไม่สามารถกูได้"
+check_require:
+  pass: "&aผ่าน&f"
+  dis_pass: "&cไม่ผ่าน&f"
+
+gui:
+  name: "Bank Server"
+  loan-detail:
+    name: "วงเงินกู้ {amount}"
+    lore:
+      - "&r"
+      - "ระยะเวลาในการคืน &e{repayment_days}"
+      - "อัตราดอกเบี้ย &e{interest_rate}%"
+      - "จำนวนที่ต้องคืน &e{repayment_total}"
+      - "ค่าปรับหากคืนไม่ทันปรับ จำนวนที่ต้องคืน+&e{penalty_rate}% &fรวมเป็น &e{penalty_total}"
+      - "อายุบัญชีที่สามารถกู้ได้ &e{min_account_age} &fวันขึ้นไป ({check_require})"
+      - "รายได้ต่อวัน &e{min_income_per_day} &fบาท ({check_require})"
+      - "&r"
+      - "สถานะรายการนี้ : {loan_status}"
+      - "&r"
+  loan-confirm:
+    confirm: "ยืนยันการกู้"
+    cancel: "ยกเลิก"
